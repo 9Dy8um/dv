@@ -1,0 +1,30 @@
+\documentclass[a5paper,oneside]{ctexbook}
+\special{dvipdfmx:config z 0}
+\usepackage{hyperref}
+\ctexset {
+    chapter = {
+        format += \Large\raggedright,
+        afterskip = 2ex,
+        beforeskip = -5.5ex,
+    },
+    section = {
+        format += \centering,
+    },
+}
+\usepackage{geometry}
+\geometry{top=1in,bottom=1in}
+\usepackage{wallpaper}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\title{}
+\author{}
+\date{}
+\begin{document}
+\ULCornerWallPaper{1}{img/cover4.png}
+\maketitle
+\ULCornerWallPaper{1}{img/paper3.png}
+\tableofcontents
+\mainmatter
+\include{chapter/chapter1}
+\include{chapter/chapter2}
+\end{document}
